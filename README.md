@@ -1,6 +1,6 @@
-# IIC3745 Testing - Tarea 1
+# IIC3745 Testing - Tarea 2
 
-## [Repo negebauer](https://github.com/negebauer/IIC3745-Testing-T1)
+## [Repo negebauer](https://github.com/negebauer/IIC3745-Testing-T2)
 
 ### Preparando desarrollo de tests
 
