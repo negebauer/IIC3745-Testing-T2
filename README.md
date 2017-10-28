@@ -2,9 +2,15 @@
 
 ## [Repo negebauer](https://github.com/negebauer/IIC3745-Testing-T2)
 
-### Preparando desarrollo de tests
+### Implementado
 
-### Creando y ejecutando tests. Bug fixes
+- Generadores: 1.5 puntos
+  - Fraction ✅
+	- Vector
+- Implementación de la Librería: 1.5 puntos
+- Testing de propiedades: 1.5 puntos
+- Análisis de Property Testing: 2 puntos ✅
+
 
 ### Análisis Property Testing
 

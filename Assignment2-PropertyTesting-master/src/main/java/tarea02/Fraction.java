@@ -5,6 +5,9 @@ package tarea02;
  * */
 public class Fraction {
 	
+	int numerator;
+	int denominator;
+	
 	/**
 	 * A' = A.normalized() is such that 
 	 * gcd(A'.numerator, A'.denominator) = 1
@@ -13,9 +16,18 @@ public class Fraction {
 		//TODO stub
 		return null;
 	}
+	
+	public double Value() {
+		return this.numerator / this.denominator;
+	}
 
 	public Fraction(int numerator, int denominator) {
-		//TODO stub
+		if (denominator == 0) {
+			this.numerator=0;
+			this.denominator=1;
+		}
+		this.numerator = numerator;
+		this.denominator = denominator;
 	}
 	
 	////////////~~~ARITHMETIC OPERATORS~~~////////////
