@@ -84,7 +84,7 @@ public class Fraction {
     return new Fraction(
       -1 * a.numerator,
       a.denominator
-      )
+      );
   }
 
   /**
@@ -94,7 +94,7 @@ public class Fraction {
     return new Fraction(
       a.denominator,
       a.numerator
-      )
+      );
   }
 
 
@@ -104,7 +104,7 @@ public class Fraction {
    * 1
    * */
   public static Fraction one() {
-    return new Fraction(1,1)
+    return new Fraction(1,1);
   }
 
   /**
@@ -114,7 +114,7 @@ public class Fraction {
     return new Fraction(
       0,
       1
-      )
+      );
   }
 
   ////////////~~~BOOLEAN OPERATORS~~~////////////
