@@ -8,7 +8,7 @@
   - Fraction ✅
 	- Vector ✅
 - Implementación de la Librería: 1.5 puntos
-  - Fraction
+  - Fraction ✅
 	- Vector
 - Testing de propiedades: 1.5 puntos
   - Fraction

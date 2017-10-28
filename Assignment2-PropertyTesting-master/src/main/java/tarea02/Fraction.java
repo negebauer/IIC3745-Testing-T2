@@ -40,32 +40,38 @@ public class Fraction {
    * a + b
    * */
   public static Fraction add(Fraction a, Fraction b) {
-    //TODO stub
-    return null;
+    return new Fraction(
+      a.numerator*b.denominator + b.numerator*a.denominator,
+      a.denominator * b.denominator
+      );
   }
 
   /**
    * a - b
    * */
   public static Fraction sub(Fraction a, Fraction b) {
-    //TODO stub
-    return null;
+    return new Fraction(
+      a.numerator*b.denominator - b.numerator*a.denominator,
+      a.denominator * b.denominator
+      );
   }
 
   /**
    * a x b
    * */
   public static Fraction mul(Fraction a, Fraction b) {
-    //TODO stub
-    return null;
+    return new Fraction(
+      a.numerator*b.numerator,
+      a.denominator * b.denominator
+      );
   }
 
   /**
    * a / b
    * */
   public static Fraction div(Fraction a, Fraction b) {
-    //TODO stub
-    return null;
+    Fraction c = new Fraction(b.denominator, b.numerator);
+    return mul(a, c);
   }
 
 
@@ -75,16 +81,20 @@ public class Fraction {
    * -a
    * */
   public static Fraction neg(Fraction a) {
-    //TODO stub
-    return null;
+    return new Fraction(
+      -1 * a.numerator,
+      a.denominator
+      )
   }
 
   /**
    * 1 / a
    * */
   public static Fraction invMultiplicative(Fraction a) {
-    //TODO stub
-    return null;
+    return new Fraction(
+      a.denominator,
+      a.numerator
+      )
   }
 
 
@@ -94,16 +104,17 @@ public class Fraction {
    * 1
    * */
   public static Fraction one() {
-    //TODO stub
-    return null;
+    return new Fraction(1,1)
   }
 
   /**
    * 0
    * */
   public static Fraction zero() {
-    //TODO stub
-    return null;
+    return new Fraction(
+      0,
+      1
+      )
   }
 
   ////////////~~~BOOLEAN OPERATORS~~~////////////
@@ -112,23 +123,22 @@ public class Fraction {
    * a == b
    * */
   public static boolean equals(Fraction a, Fraction b) {
-    //TODO stub
-    return false;
+    Fraction na = a.normalized();
+    Fraction nb = b.normalized();
+    return na.numerator == nb.numerator && na.denominator == nb.denominator;
   }
 
   /**
    * a > b
    * */
   public static boolean gThan(Fraction a, Fraction b) {
-    //TODO stub
-    return false;
+    return a.numerator/a.denominator > b.numerator/b.denominator;
   }
 
   /**
    * a < b
    * */
   public static boolean lThan(Fraction a, Fraction b) {
-    //TODO stub
-    return false;
+    return !gThan(a,b);
   }
 }
