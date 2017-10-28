@@ -6,9 +6,13 @@
 
 - Generadores: 1.5 puntos
   - Fraction ✅
-	- Vector
+	- Vector ✅
 - Implementación de la Librería: 1.5 puntos
+  - Fraction
+	- Vector
 - Testing de propiedades: 1.5 puntos
+  - Fraction
+	- Vector
 - Análisis de Property Testing: 2 puntos ✅
 
 
